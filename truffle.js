@@ -36,8 +36,7 @@ module.exports = {
     main: {
       provider: () => new HDWalletProvider(process.env.MNENOMIC, "https://mainnet.infura.io/" + process.env.INFURA_API_KEY),
       network_id: 1,
-      gas: 3000000,
-      gasPrice: 21
+      gas: 30000
     }
   }
 }
