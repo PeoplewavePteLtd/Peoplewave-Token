@@ -14,10 +14,14 @@
 ## Read examples
 
 ### Consulting an account balance
-- Balance of the owner's balance --> currently is the entire supply `1,200,000,000`
+- Balance of the owner's balance
+--> currently is the entire supply `1,200,000,000 x 10^18` because the token has 18 digits
+
 ![balance of owner's account](img/balance-owner.png?raw=true "balance of owner's account")
 
-- balance of a random account --> response is `0`
+- balance of a random account
+--> response is `0`
+
 ![balance of random account](img/balance-random.png?raw=true "balance of random account")
 
 ## Write examples
@@ -47,7 +51,8 @@ Afterwards ensure you are on Mainnet with the right account owning the contract
 Use method `4. transfer` which deducts tokens from the owner's balance and credits them to the provided address. The total supply is unchanged.
 
    1. ##### Enter the parameters
-   here are 1000 PPL for 0x0000b0b
+   here are `1000x10^-18 PPL` for 0x0000b0b.
+   (contract has 18 digits so you need 18 zeros to transfer 1 token)
 
 ![transfer](img/transfer1.png?raw=true "transfer")
 
